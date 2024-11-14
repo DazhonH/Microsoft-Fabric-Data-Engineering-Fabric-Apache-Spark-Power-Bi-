@@ -6,11 +6,11 @@
 ## Project Overview
 This project demonstrates a pipleine where data from the Bing News Search API is processed using Apache Spark and visualized using Power BI. The pipeline cleans, aggregates, and prepares the data for data visualization. The main purpose of this project was to gain hands on experience using Microsoft Fabric in order to pass the DP-600 which is the **Microsoft Fabric Analytics Engineer Associate certification**.
 
-I passed with a score of 880!! Here are my [credentials]('https://learn.microsoft.com/en-us/users/dazhonhunt-8403/credentials/certification/fabric-analytics-engineer-associate?tab=credentials-tab').
+I passed with a score of 880!! Here are my [credentials](https://learn.microsoft.com/en-us/users/dazhonhunt-8403/credentials/certification/fabric-analytics-engineer-associate?tab=credentials-tab).
 
 # Data Flow
 
-1. **Raw Data**: The raw news data is retrieved in **JSON format** from the **Bing News Search API** through **Microsoft Fabric** which is sourced from the **Bing News API** in [Azure]('https://azure.microsoft.com/en-us/products/app-service/api/?ef_id=_k_CjwKCAiA3Na5BhAZEiwAzrfagHOq3ur7AgTzW9WBvCJLv7gvlZ40sDvre49F4NtOaRsNCiEESxuBnBoCF_YQAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAiA3Na5BhAZEiwAzrfagHOq3ur7AgTzW9WBvCJLv7gvlZ40sDvre49F4NtOaRsNCiEESxuBnBoCF_YQAvD_BwE_k_&gad_source=1&gclid=CjwKCAiA3Na5BhAZEiwAzrfagHOq3ur7AgTzW9WBvCJLv7gvlZ40sDvre49F4NtOaRsNCiEESxuBnBoCF_YQAvD_BwE')
+1. **Raw Data**: The raw news data is retrieved in **JSON format** from the **Bing News Search API** through **Microsoft Fabric** which is sourced from the **Bing News API** in [Azure](https://azure.microsoft.com/en-us/products/app-service/api/?ef_id=_k_CjwKCAiA3Na5BhAZEiwAzrfagHOq3ur7AgTzW9WBvCJLv7gvlZ40sDvre49F4NtOaRsNCiEESxuBnBoCF_YQAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAiA3Na5BhAZEiwAzrfagHOq3ur7AgTzW9WBvCJLv7gvlZ40sDvre49F4NtOaRsNCiEESxuBnBoCF_YQAvD_BwE_k_&gad_source=1&gclid=CjwKCAiA3Na5BhAZEiwAzrfagHOq3ur7AgTzW9WBvCJLv7gvlZ40sDvre49F4NtOaRsNCiEESxuBnBoCF_YQAvD_BwE)
 2. **Data Transformation**: The data is cleaned and transformed using Spark in the two Jupyter Notebooks.
 3. **Visualization**: The transformed data is used to generate interactive visualizations in Power BI. These visualizations allow users to analyze trends in the news data, including article distribution by category, frequency of topics, and more.
 
