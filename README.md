@@ -8,7 +8,7 @@ This project demonstrates a pipeline where data from the Bing News Search API is
 
 I passed with a score of 880!! Here are my [Microsoft Fabric Analytics Engineer Associate certification credentials](https://learn.microsoft.com/en-us/users/dazhonhunt-8403/credentials/certification/fabric-analytics-engineer-associate?tab=credentials-tab).
 
-# Data Flow
+## Data Flow
 
 1. **Data Ingestion**:
 
@@ -58,6 +58,9 @@ I passed with a score of 880!! Here are my [Microsoft Fabric Analytics Engineer 
     - Stored the resulting sentiment data in a new Delta table for further use.
 
 [Sentiment Analyis Notebook](<https://github.com/DazhonH/Microsoft-Fabric-Data-Engineering-Project/blob/main/Bing%20-%20Sentiment%20-%20Analysis.ipynb>)
+
+## Lakehouse Snapshot
+![Screenshot 2024-12-21 152426](https://github.com/user-attachments/assets/7892b31e-5463-4427-b12e-ba5d4892ee2a)
 
  
 
