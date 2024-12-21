@@ -10,8 +10,36 @@ I passed with a score of 880!! Here are my [Microsoft Fabric Analytics Engineer 
 
 # Data Flow
 
-1. **Raw Data**: The raw news data is retrieved in **JSON format** from the **Bing News Search API** through **Microsoft Fabric** which is sourced from the **Bing News API** in [Azure](https://azure.microsoft.com/en-us/products/app-service/api/?ef_id=_k_CjwKCAiA3Na5BhAZEiwAzrfagHOq3ur7AgTzW9WBvCJLv7gvlZ40sDvre49F4NtOaRsNCiEESxuBnBoCF_YQAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAiA3Na5BhAZEiwAzrfagHOq3ur7AgTzW9WBvCJLv7gvlZ40sDvre49F4NtOaRsNCiEESxuBnBoCF_YQAvD_BwE_k_&gad_source=1&gclid=CjwKCAiA3Na5BhAZEiwAzrfagHOq3ur7AgTzW9WBvCJLv7gvlZ40sDvre49F4NtOaRsNCiEESxuBnBoCF_YQAvD_BwE)
+1. **Data Ingestion**:
 
+   - Created a resource group in Azure called **bing-fabric-data-analytics**. Within this resource group, I created a Bing search resource that you can find via marketplace.
+     <br><br>
+   
+    <img src="https://github.com/user-attachments/assets/9fa00d19-6a45-4f05-81c0-b747a94d39fe" width="450"/>
+    <br><br>
+
+   - For the storage destination I created a lakehouse in Fabric called **bing_lake_db**.
+   - To configure the data source I connected to the Bing Search API via Rest connection in Fabric.
+    <br><br>
+   
+   <img src="https://github.com/user-attachments/assets/486b9ce9-92ee-4612-a772-ce65fdff8d6d" width="400"/>
+   <br><br>
+
+  **Paramaters for a successfull connection to the API**
+  - The [Endpoints](<https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/reference/endpoints>) for the base URL.
+    (https://api.bing.microsoft.com/v7.0/news/search)
+  
+  - [Query paramaters](<https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/reference/query-parameters>) to define the search.
+    (?q=latest+news&count=100&freshness=Day&mkt=en-US)
+
+  - The [headers](<https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/reference/headers>) ( Ocp-Apim-Subscription-Key).
+    This is the subscription key that you receive when you sign up in Azure Portal while creating a [Bing resource](<https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/create-bing-search-service-resource#create-your-bing-resource>).
+
+  - I set the destination up to the Fabric lakehouse **bing_lake_db** that I created earlier, the file path to **bing-latest-news.json**, and the file format to JSON.
+
+     <img src="https://github.com/user-attachments/assets/a73120c7-2fd8-467f-8a9c-c3e557cc8d46" width="550"/>
+     <br><br>
+     
 2. **Data Transformation**
       
   - **Process**:
@@ -32,6 +60,8 @@ I passed with a score of 880!! Here are my [Microsoft Fabric Analytics Engineer 
 [Sentiment Analyis Notebook](<https://github.com/DazhonH/Microsoft-Fabric-Data-Engineering-Project/blob/main/Bing%20-%20Sentiment%20-%20Analysis.ipynb>)
 
  
+
+
 4. **Visualization**: The transformed data is used to generate interactive visualizations in Power BI. These visualizations allow users to analyze trends in the news data, including article distribution by category, frequency of topics, and more.
 
 ## Technologies Used
