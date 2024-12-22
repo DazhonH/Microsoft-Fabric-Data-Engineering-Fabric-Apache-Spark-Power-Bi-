@@ -87,5 +87,7 @@ I passed with a score of 880!! Here are my [Microsoft Fabric Analytics Engineer 
 ## Conclusion
 This project provided valuable experience in building end-to-end data pipelines using Microsoft Fabric, Apache Spark, and Power BI. Future improvements could include adding real-time data processing, incorporating machine learning for more advanced predictions, and enhancing the visualizations for deeper insights.
 
+## About This Project
+This project was inspired by the udemy course [Build Bing News Data Analytics platform using different Data Engineering components of Microsoft Fabric [DP-600][DP-203]](<https://www.udemy.com/course/microsoft-fabric-end-to-end-data-engineering-project/learn/lecture/43202384#overview>). I followed the tutorial as part of my preperation for the Fabric Analytics Engineer Associate certification that I successfully passed. While the base structure follows the tutorial, I added customizations to explore additional features and solidify my understsnding.
 
 
