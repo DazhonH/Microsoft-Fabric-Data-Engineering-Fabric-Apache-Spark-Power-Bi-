@@ -6,8 +6,7 @@
 ## Project Overview
 This project demonstrates a pipeline where data from the Bing News Search API is processed using Apache Spark and visualized using Power BI. The pipeline cleans, aggregates, and prepares the data for data visualization. The main purpose of this project was to gain hands on experience using Microsoft Fabric in order to pass the DP-600 which is the **Microsoft Fabric Analytics Engineer Associate certification**.
 
-I passed with a score of 880!! Here are my [Microsoft Fabric Analytics Engineer Associate certification credentials](https://learn.microsoft.com/en-us/users/dazhonhunt-8403/credentials/certification/fabric-analytics-engineer-associate?tab=credentials-tab).
-
+I successfully passed the certification.  Here are my [Microsoft Fabric Analytics Engineer Associate certification credentials](<https://learn.microsoft.com/en-us/users/dazhonhunt-8403/credentials/certification/fabric-analytics-engineer-associate?tab=credentials-tab&source=docs>)
 ## Data Flow
 
 1. **Data Ingestion**:
